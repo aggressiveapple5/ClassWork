@@ -23,6 +23,8 @@ public class StringMethods
 		System.out.println(convertItalics("The pie is good."));
 		System.out.println(convertItalics("The_pie is good."));
 		System.out.println(convertItalics("The_pie_is good."));
+		System.out.println(convertItalics("The__pie_is_good."));
+		System.out.println(convertItalics("This is _a_ _cat_."));
 	
 	
 	
@@ -166,6 +168,8 @@ public class StringMethods
 		else
 		{
 			int numOfUnderscores = 0;
+			numOfUnderscores = countStrings(line, "_");
+			/*
 			String copyOfOriginal = line;
 			int placementOfUnderscores = copyOfOriginal.indexOf("_");
 			while (placementOfUnderscores >= 0)
@@ -174,16 +178,37 @@ public class StringMethods
 				numOfUnderscores ++;
 				copyOfOriginal = copyOfOriginal.substring(placementOfUnderscores + 1);
 				
-			}
-			if (numOfUnderscores % 2 == 0)
+			}*/
+			System.out.println(numOfUnderscores);
+			if (numOfUnderscores % 2 == 1)
 				return line;
 			else
 			{
 				String evenCopy = line;
-				while (evenCopy.indexOf("_") > -1)
+				while (numOfUnderscores > 0)
 				{
-					int placement = evenCopy.indexOf("_");
-					evenCopy = (evenCopy.substring(0, placement) + "<I>" + evenCopy.substring(placement + 1, evenCopy.length()));
+					
+					if (numOfUnderscores % 2 == 0)
+					{
+						int placement = evenCopy.indexOf("_");
+						if ((placement == evenCopy.length() - 1))
+							evenCopy = evenCopy.substring(0, placement) + "<I>";
+						else if (!(evenCopy.substring(placement + 1, placement + 2).equals("_")) && !(evenCopy.substring(placement - 1, placement).equals("_")))
+							evenCopy = (evenCopy.substring(0, placement) + "<I>" + evenCopy.substring(placement + 1));
+						
+					}
+					else
+					{
+						int placement = evenCopy.indexOf("_");
+						if ((placement == evenCopy.length() - 1))
+							evenCopy = evenCopy.substring(0, placement) + "</I>";
+						else if (!(evenCopy.substring(placement + 1, placement + 2).equals("_")) && !(evenCopy.substring(placement - 1, placement).equals("_")))
+							evenCopy = (evenCopy.substring(0, placement) + "</I>" + evenCopy.substring(placement + 1, evenCopy.length()));
+					
+					
+					}
+					
+					numOfUnderscores --;
 				}
 				
 				return evenCopy;
@@ -198,17 +223,6 @@ public class StringMethods
 	
 	
 	}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
