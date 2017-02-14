@@ -1,0 +1,35 @@
+Class documentation
+<---- javadoc command: ---->
+/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/JDK/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-core.jar:/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-device.jar:/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-gpio-extension.jar:/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-service.jar:/Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing
+-d
+/Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/Users/matthewkeller/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing/CellPhoneRunner.java
+<---- end of javadoc command ---->
+Loading source file /Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing/CellPhoneRunner.java...
+/Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing/CellPhoneRunner.java:11: error: <identifier> expected
+   System.out.println(cell);
+                     ^
+/Users/matthewkeller/Dropbox/Pingry/10th Grade/AP Comp Sci/KrishAndMyBlueJThing/CellPhoneRunner.java:11: error: <identifier> expected
+   System.out.println(cell);
+                          ^
+2 errors

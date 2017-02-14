@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=smartPhone()
+comment1.params=p\ b\ r
+comment1.target=smartPhone(java.lang.String,\ java.lang.String,\ boolean)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment11.params=bribe
+comment11.target=java.lang.String\ call911(int)
+comment2.params=
+comment2.target=java.lang.String\ getProvider()
+comment3.params=
+comment3.target=java.lang.String\ getBrand()
+comment4.params=
+comment4.target=boolean\ getRetina()
+comment5.params=p
+comment5.target=void\ setProvider(java.lang.String)
+comment6.params=b
+comment6.target=void\ setBrand(java.lang.String)
+comment7.params=r
+comment7.target=void\ setRetina(boolean)
+comment8.params=
+comment8.target=int\ getPrice()
+comment9.params=a
+comment9.target=boolean\ equals(smartPhone)
+numComments=12
